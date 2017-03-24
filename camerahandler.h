@@ -2,6 +2,7 @@
 #define CAMERAHANDLER_H
 
 #include <QObject>
+#include <QCamera>
 
 class CameraHandler : public QObject
 {
@@ -12,6 +13,9 @@ class CameraHandler : public QObject
 	signals:
 
 	public slots:
+
+	private:
+		QList<QCamera*> m_activeCameras;
 };
 
 #endif // CAMERAHANDLER_H

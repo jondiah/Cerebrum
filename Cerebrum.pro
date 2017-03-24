@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui multimedia multimediawidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,8 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        startupview.cpp
+        startupview.cpp \
+    cameradevices.cpp \
+    camera.cpp \
+    camerahandler.cpp
 
-HEADERS  += startupview.h
+HEADERS  += startupview.h \
+    cameradevices.h \
+    camera.h \
+    camerahandler.h
 
 FORMS    += startupview.ui
